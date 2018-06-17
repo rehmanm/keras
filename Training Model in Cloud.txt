@@ -1,0 +1,21 @@
+Google
+
+Connect GCP using SSH
+
+gcloud compute --project "microservices-test-190903" ssh --zone "us-east1-b" "instance-1"
+
+Copy File using SCP
+
+gcloud compute scp chapter2.py rehmanm@instance-1:/home/rehmanm --project "microservices-test-190903" --zone "us-east1-b"
+
+
+Amazon
+
+Connect EC2 using SSH
+
+ssh -i "keras.pem" ec2-user@ec2-18-205-114-43.compute-1.amazonaws.com
+
+Copy File using SCP
+
+scp -i keras.pem chapter2.py ec2-user@ec2-18-205-114-43.compute-1.amazonaws.com:/home/ec2-user/code
+
